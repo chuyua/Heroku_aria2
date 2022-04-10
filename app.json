@@ -20,9 +20,4 @@
 			"required": false
 		}
 	},
-	"buildpacks": [
-		{
-			"url": "heroku/nodejs"
-		}
-	]
 }
