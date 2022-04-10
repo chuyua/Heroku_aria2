@@ -1,11 +1,12 @@
 services:
-	  name: Heroku aria2,
+  - type: web
+	  name: Heroku aria2
 	  env: docker
 	  region: Singapore
     plan: free
     healthCheckPath: /
- 	  repository: https://github.com/chuyua/Heroku_aria2,
-  	keywords: [aria2],
+ 	  repository: https://github.com/chuyua/Heroku_aria2
+  	keywords: [aria2]
 	  envVars: 
 	   - key: HEROKU_APP_NAME
       # value:
