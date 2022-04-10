@@ -1,24 +1,19 @@
 services:
   - type: web
-	"name": "Heroku aria2",
-	"description": "Aria2 for Heroku",
-	"repository": "https://github.com/moeik/Heroku_aria2",
-	"keywords": ["aria2"],
-	"env": {
-		"HEROKU_APP_NAME": {
-			"description": "填写你的 \"App name\"，保证和上面一样"
-		},
-		"ARIA2C_SECRET": {
-			"description": "填写一个后台密码",
-			"value": "password"
-		},
-		"RCLONE_CONFIG": {
-			"description": "每一行配置后面用\"\\n\"替换换行符",
-			"required": false
-		},
-		"RCLONE_DESTINATION": {
-			"description": "填写一个OneDrive上传路径，如：/update",
-			"required": false
-		}
-	},
-}
+	  name: Heroku aria2,
+	  env: docker
+	  region: Singapore
+    plan: free
+    healthCheckPath: /
+ 	  repository: https://github.com/chuyua/Heroku_aria2,
+  	keywords: [aria2],
+	  envVars: 
+	   - key: HEROKU_APP_NAME
+      # value:
+      - key: ARIA2C_SECRET
+      # value:
+      - key: HEROKU_APP_NAME
+  # value:
+      - key: RCLONE_CONFIG
+      # value:
+      - key: RCLONE_DESTINATION
