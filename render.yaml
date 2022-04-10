@@ -1,4 +1,5 @@
-{
+services:
+  - type: web{
 	"name": "Heroku aria2",
 	"description": "Aria2 for Heroku",
 	"repository": "https://github.com/moeik/Heroku_aria2",
